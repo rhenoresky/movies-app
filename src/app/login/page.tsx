@@ -43,8 +43,7 @@ export default function Login() {
             src="https://www.svgrepo.com/show/355037/google.svg"
             className="w-6 h-6"
             alt="Icon"
-            width={500}
-            height={500}
+            fill
           />
           <span>Login with Google</span>
         </button>
