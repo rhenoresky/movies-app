@@ -1,6 +1,8 @@
 "use client";
 
+import { signIn } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Login() {
@@ -21,15 +23,8 @@ export default function Login() {
 
   const login = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8080/auth/signin", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(account),
-    });
-    const res = await response.json();
-    console.log(res);
+
+    await signIn("credentials", account);
   };
 
   return (
@@ -43,7 +38,8 @@ export default function Login() {
             src="https://www.svgrepo.com/show/355037/google.svg"
             className="w-6 h-6"
             alt="Icon"
-            fill
+            width={400}
+            height={400}
           />
           <span>Login with Google</span>
         </button>
@@ -94,8 +90,8 @@ export default function Login() {
           </button>
           <p className="text-center">
             Not registered yet?&nbsp;
-            <a
-              href="#"
+            <Link
+              href="/register"
               className="text-indigo-600 font-medium inline-flex space-x-1 items-center"
             >
               <span>Register now</span>
@@ -115,7 +111,7 @@ export default function Login() {
                   />
                 </svg>
               </span>
-            </a>
+            </Link>
           </p>
         </div>
       </form>

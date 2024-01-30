@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -59,7 +60,8 @@ export default function Register() {
             src="https://www.svgrepo.com/show/355037/google.svg"
             className="w-6 h-6"
             alt="Icon"
-            fill
+            width={400}
+            height={400}
           />
           <span>Register with Google</span>
         </button>
@@ -121,8 +123,8 @@ export default function Register() {
           </button>
           <p className="text-center">
             Already registered?&nbsp;
-            <a
-              href="#"
+            <Link
+              href="/login"
               className="text-indigo-600 font-medium inline-flex space-x-1 items-center"
             >
               <span>Login now</span>
@@ -142,7 +144,7 @@ export default function Register() {
                   />
                 </svg>
               </span>
-            </a>
+            </Link>
           </p>
         </div>
       </form>
