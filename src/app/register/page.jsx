@@ -7,16 +7,14 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function Register() {
+const Register = () => {
   const router = useRouter();
   const [account, setAccount] = useState({
     name: "",
     email: "",
     password: "",
   });
-  const handleInputChange = (event: {
-    target: { name: string; value: string };
-  }) => {
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
 
     setAccount({
@@ -25,13 +23,13 @@ export default function Register() {
     });
   };
 
-  const errorNotify = (err: string) => {
+  const errorNotify = (err) => {
     toast.error(err, {
       position: "bottom-right",
     });
   };
 
-  const register = async (e: { preventDefault: () => void }) => {
+  const register = async (e) => {
     e.preventDefault();
     const response = await fetch("http://localhost:8080/auth/signup", {
       method: "POST",
@@ -151,4 +149,6 @@ export default function Register() {
       <ToastContainer />
     </div>
   );
-}
+};
+
+export default Register;

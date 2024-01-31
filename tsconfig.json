@@ -19,8 +19,7 @@
       }
     ],
     "paths": {
-      "@/components/*": ["./src/components/*"],
-      "@/lib/*": ["./src/lib/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -28,7 +27,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/api/auth/[...nextauth].js"
+    "src/app/api/auth/[...nextauth].js",
+    "src/app/page.jsx",
+    "src/app/login/page.jsx",
+    "src/app/register/page.jsx",
+    "src/app/layout.jsx"
   ],
   "exclude": ["node_modules"]
 }
