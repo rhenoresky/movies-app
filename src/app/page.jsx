@@ -4,5 +4,9 @@ import { signOut } from "next-auth/react";
 export default async function Home() {
   const session = await auth();
   console.log(session);
-  return <button onClick={signOut}>logout</button>;
+  return (
+    <div>
+      <button onClick={signOut}>logout</button>
+    </div>
+  );
 }
