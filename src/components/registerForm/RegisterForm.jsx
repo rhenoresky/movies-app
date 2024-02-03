@@ -25,36 +25,36 @@ const RegisterForm = () => {
       <form className="my-10" action={formAction}>
         <div className="flex flex-col space-y-5">
           <label htmlFor="name">
-            <p className="font-medium text-slate-700 pb-2">Name</p>
+            <p className="font-medium text-[#E9A6A6] pb-2">Name</p>
             <input
               id="name"
               name="name"
               type="name"
-              className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+              className="w-full py-3 text-[#E9A6A6] border border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
               placeholder="Enter your name"
             />
           </label>
           <label htmlFor="email">
-            <p className="font-medium text-slate-700 pb-2">Email address</p>
+            <p className="font-medium text-[#E9A6A6] pb-2">Email address</p>
             <input
               id="email"
               name="email"
               type="email"
-              className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+              className="w-full py-3 text-[#E9A6A6] border border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
               placeholder="Enter email address"
             />
           </label>
           <label htmlFor="password">
-            <p className="font-medium text-slate-700 pb-2">Password</p>
+            <p className="font-medium text-[#E9A6A6] pb-2">Password</p>
             <input
               id="password"
               name="password"
               type="password"
-              className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+              className="w-full py-3 text-[#E9A6A6] border border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
               placeholder="Enter your password"
             />
           </label>
-          <button className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
+          <button className="w-full py-3 font-medium text-[#864879] bg-[#E9A6A6] hover:bg-[#fcb3b3] rounded-lg border-[#864879] hover:shadow inline-flex space-x-2 items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -71,14 +71,14 @@ const RegisterForm = () => {
             </svg>
             <span>Register</span>
           </button>
-          <p className="text-center">
+          <p className="text-center text-[#864879]">
             Already registered?&nbsp;
-            <Link href="/login" className="text-indigo-600 font-medium inline-flex space-x-1 items-center">
+            <Link href="/login" className="text-[#E9A6A6] font-medium inline-flex space-x-1 items-center">
               <span>Login now</span>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
+                  className="h-4 w-4 text-[#E9A6A6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
