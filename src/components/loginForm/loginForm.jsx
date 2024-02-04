@@ -30,7 +30,7 @@ const LoginForm = () => {
             <input
               name="email"
               type="email"
-              className="w-full py-3 border border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
+              className="w-full py-3 border text-[#E9A6A6] border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
               placeholder="Enter email address"
             />
           </label>
@@ -39,7 +39,7 @@ const LoginForm = () => {
             <input
               name="password"
               type="password"
-              className="w-full py-3 border border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
+              className="w-full py-3 border text-[#E9A6A6] border-[#E9A6A6] bg-[#864879] rounded-lg px-3 focus:outline-none focus:border-[rgb(251,178,178)] hover:shadow placeholder-[#E9A6A6]"
               placeholder="Enter your password"
             />
           </label>
