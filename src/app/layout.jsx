@@ -13,7 +13,17 @@ export default function RootLayout({ children }) {
   return (
     <ReduxProvider>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <nav className="w-full py-4 px-2 bg-[#3F3351] text-[#864879]">
+            <h1 className="text-xl font-semibold">Navbar</h1>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+          {children}
+        </body>
       </html>
     </ReduxProvider>
   );

@@ -21,3 +21,22 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #864879 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(60%) sepia(100%) saturate(1000%) hue-rotate(280deg);
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e9a6a6;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #864879;
+}
