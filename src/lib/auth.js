@@ -12,7 +12,7 @@ export const {
   providers: [
     CredentialsProvider({
       async authorize(credentials) {
-        const authResponse = await fetch("http://localhost:8080/auth/signin", {
+        const authResponse = await fetch(`${process.env.API_URL}/auth/signin`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
