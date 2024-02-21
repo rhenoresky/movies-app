@@ -3,7 +3,7 @@
 export const register = async (prevState, formData) => {
   const data = Object.fromEntries(formData);
 
-  const response = await fetch("http://localhost:8080/auth/signup", {
+  const response = await fetch(`${process.env.API_URL}/auth/signup`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
